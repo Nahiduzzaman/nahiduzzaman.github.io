@@ -40,7 +40,7 @@ else{
 function searchTodo(text){
 	var searchText = text.value;
 	console.log('searchText',searchText);
-	create(searchText);
+	create(undefined,undefined,searchText);
 }
 
 function filter(selection){
@@ -145,7 +145,7 @@ function create(status,isfilter,searchText) {
 	    console.log('allData',allData);
 	    todoData = allData;
 	}
-    searchText = status;
+
 	if(searchText){
 		console.log('searchText in create()',searchText);
 		console.log('searchText in TodoData',todoData);
